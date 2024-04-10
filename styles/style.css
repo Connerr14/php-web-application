@@ -1,0 +1,582 @@
+/* Setting some global styles */
+body {
+  font-family: 'Montserrat',  sans-serif;
+  color: #4A4A4A;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+/* Making the headers a different font as to the body text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Making sure the footer and header headings are Montserrat as they are easier to read this way  */
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6,
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/* Header and Navigation */
+header {
+  background-color: rgb(2, 49, 82); /* Dark grey-blue */
+  padding: 0.1em 0;
+}
+
+/* Add a hover effect to all links */
+a:hover {
+  color: #066B3B;
+}
+
+/* Making the navigation a flex box */
+nav ul {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Taking away bullet points */
+nav ul li {
+  list-style: none;
+}
+
+/* Styling the logo image */
+nav img {
+  width: 10vw;
+  height: 5vw; 
+  border-radius: 20px;
+  margin-top: 1em;
+  min-width: 80px; 
+  min-height: 60px;
+}
+
+/* Styling the navigation links */
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem; 
+}
+
+/* Masthead styling */
+.masthead {
+  background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNDZuZHpwY21ud3JjNHZ1ZGNma2g3Mjg3MGtrb3dnOXUyOW93enB3dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/iboYTHPHMHxvtqTile/giphy.gif');
+  width: 100%;
+  height: auto; 
+  background-position: center;
+  background-size: 100%;
+  padding: 2em 0;
+  text-align: center;
+}
+
+/* Styling a wrapper div to contain and back shadow */
+#wrapper {
+  width: 50%; 
+  height: auto; 
+  margin: 8rem auto; 
+  background: rgba(4, 4, 4, 0.9);
+  padding: 1.4em;
+  border-radius: 40px;
+}
+
+/* Styling the h1 tag in the masthead */
+.masthead h1 {
+  font-size: 3.125rem; 
+  margin-bottom: 0.5em;
+  position: relative;
+  top: 15%;
+  color: white;
+}
+
+/* Styling the anchor tag in the masthead */
+.masthead a {
+  display: inline-block;
+  padding: 0.7em 1.5em;
+  background: rgb(214,120,42);
+  color: rgb(0, 0, 0);
+  font-size: 1.25rem; 
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  position: relative;
+  top: 20%;
+}
+
+/* Services Section */
+
+/* Setting global styles on the services page  */
+.services {
+  background-color: rgb(2, 49, 82);
+  text-align: center;
+  padding: 2em 0;
+  margin-top: 0;
+  width: 100%;
+  height: auto; 
+}
+/* Styling for the services section */
+.services ul {
+  display: flex; /* Display the list items in a row */
+  width: 100%;
+}
+
+.services h2 {
+  color: #ffffff; 
+  font-size: 2.1875rem; /* Set the font size */
+  margin-bottom: 1em; /* Set the bottom margin */
+}
+
+.services ul {
+  padding: 0; /* Remove padding from the unordered list */
+}
+
+.services li {
+  list-style: none; /* Remove the bullet points from the list items */
+  align-items: center; /* Align the items vertically */
+  width: 33.33%; /* Set the width to one-third of the container */
+  margin: 1.5em; 
+  background: #f5f5f5; 
+  padding: 1em; /* Set the padding */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+.services li img {
+  width: 100%; 
+  height: auto; 
+  border-bottom: 5px solid #066B3B; /* Add a bottom border */
+}
+
+
+.services li img:hover {
+  transform: scale(1.05); /* Scale the image on hover */
+}
+
+.services h3 {
+  color: #333; 
+  margin: 0.5em 0; /* Set the top and bottom margin */
+}
+
+.services p {
+  font-size: 1rem; 
+}
+
+/* Styling for the quote section */
+.getAQuote {
+  background: #066B3B; /* Set the background color to the green used throughout the site */
+  width: 50%; 
+  margin: 0 auto; /* Center the element */
+  border-radius: 10px; /* Add rounded corners */
+  color: #fff; 
+  text-align: center; /* Center align the text */
+  padding: 2em 0; /* Set the padding */
+  height: auto; /* Set the height to auto so it auto changes*/
+}
+
+.getAQuote h2 {
+  margin: 0.25em auto; 
+  font-size: 1.875rem; 
+}
+
+.getAQuote a {
+  display: inline-block; /* Display as inline-block */
+  margin-top: 1em; /* Set top margin so there is more space */
+  font-size: 1.25rem;
+  padding: 0.625em 1.8em;
+  background: rgb(214,120,42); 
+  color: white; 
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Set the font weight */
+  border-radius: 5px; /* Add rounded corners */
+}
+
+/* Styling for the footer */
+footer {
+  background: #263238;
+  color: white; 
+  padding: 1em 0; /* Set the padding */
+  text-align: center; /* Center align the text */
+}
+
+footer img {
+  position: relative; /* Set the position to relative so that it can be moved about the page */
+  left: 1%; 
+  width: 10vw; /* Set the width */
+  height: 5vw; /* Set the height */
+  border-radius: 20px; /* Add rounded corners */
+  margin-top: 1em; 
+  min-width: 80px; 
+  min-height: 60px; 
+}
+
+footer a {
+  color: white; 
+  text-decoration: none; /* Remove underline */
+  display: block; /* Display as block */
+  margin-bottom: 0.5em; /* Set the bottom margin */
+}
+
+footer h3 {
+  margin-bottom: 1.3rem; 
+}
+
+footer li {
+  font-size: 0.8rem; /* Set the font size */
+  list-style: none; /* Remove the bullet points */
+}
+
+footer p {
+  font-size: 0.8rem; 
+}
+
+#bottomWrapper {
+  display: flex; /* Make the wrapper a flex box */
+  justify-content: space-evenly; /* Space the items evenly */
+  flex-direction: row; /* Set the direction to row */
+  width: 100%; 
+}
+
+#easyAccessLinks ul {
+  padding: 0; /* Remove padding from the unordered list */
+  margin: 0 auto; /* Center align the list */
+  list-style-type: none; /* Remove the bullet points */
+  text-align: center; 
+}
+
+/* Style the different footer elements */
+#socialMedia,
+#reachUs,
+#easyAccessLinks {
+  display: inline-block; 
+  margin-right: 2em; 
+  flex: 1; /* Set the flex value */
+}
+
+/* Adding a media query for small screen sizes, changing structure, sizing and margin */
+@media (max-width: 320px) {
+  #wrapper h1 {
+    font-size: 1.7em;
+  }
+
+  section #wrapper  {
+    height: auto;
+    margin-top: 60px;
+  }
+  .masthead {
+    height: 35vh;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  #wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+  }
+
+  .masthead h1 {
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .masthead a {
+    /* Less padding */
+    padding: 6px;
+    font-size: 1em;
+  }
+
+  .services ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; /* Centers the UL within its parent */
+  }
+
+  .services li {
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    margin: 10px auto;
+    
+  }
+
+  .services {
+    height: auto;
+  }
+  .services li {
+    padding: 0.7em;
+  }
+
+  .getAQuote {
+    margin-top: 30px;
+  }
+
+  /* Adjust the footer */
+  #bottomWrapper {
+    flex-direction: column;
+  }
+
+  footer img {
+    /* Move the logo to the center of the footer */
+    margin: 0 auto;
+
+    /* Move the image to the very bottom */
+    order: 1;
+  }
+
+  #socialMedia,
+  #reachUs,
+  #easyAccessLinks {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+
+  .getAQuote {
+    width: 70%;
+    margin-top: 2%;
+    padding: 4%;
+  }
+  
+  .getAQuote h2 {
+    font-size: 20px;
+  }
+  
+  .getAQuote a {
+    font-size: 15px;
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 0%;
+  }
+}
+
+/* Adding a media query for small to medium-small screen sizes, changing structure, positions, and sizing */
+@media (min-width: 481px) and (max-width: 768px) {
+  footer img {
+    left: 18%;
+    top: 5.3em;
+  }
+
+  .masthead h1 {
+    height: auto;
+    font-size: 2.4em;
+  }
+
+  .masthead #wrapper a {
+    top: -20%;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+}
+
+/* Adding a media query for medium to large viewports to change the font sizes, widths and margins */
+@media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){
+  .masthead a {
+    top: 16%;
+  }
+
+  .masthead h1 {
+    font-size: 2.4em;
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .section #getAQuote {
+    text-align: center;
+  }
+}
+
+/* Adding styling for Mobile Devices changing structure, sizes and positions*/
+@media (min-width: 321px) and (max-width: 480px) {
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  #wrapper {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+  }
+
+  .masthead h1 {
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .masthead a {
+    /* Less padding */
+    padding: 6px;
+    font-size: 1em;
+  }
+
+  .services ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; /* Centers the UL within its parent */
+  }
+
+  .services li {
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    margin: 10px auto;
+    
+  }
+
+  .services {
+    height: auto;
+  }
+  .services li {
+    padding: 0.7em;
+  }
+
+  .getAQuote {
+    margin-top: 30px;
+  }
+
+  /* Adjust the footer */
+  #bottomWrapper {
+    flex-direction: column;
+  }
+
+  footer img {
+    /* Move the logo to the center of the footer */
+    margin: 0 auto;
+
+    /* Move the image to the very bottom */
+    order: 1;
+  }
+
+  #socialMedia,
+  #reachUs,
+  #easyAccessLinks {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+
+  .getAQuote {
+    width: 70%;
+    margin-top: 2%;
+    padding: 4%;
+  }
+  
+  .getAQuote h2 {
+    font-size: 20px;
+  }
+  
+  .getAQuote a {
+    font-size: 15px;
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 0%;
+  }
+}
+
+/* Styling for medium to large screen sizes, changing widths and fonts sizes */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #wrapper {
+    width: 70%;
+  }
+
+  .masthead a {
+    font-size: 1.7em;
+  }
+
+  .masthead h1 {
+    font-size: 3.185em;
+  }
+
+  nav a {
+    font-size: 1.35em;
+  }
+
+  nav img {
+    width: 12vw;
+    height: 7vw;
+  }
+
+  section .services {
+    height: auto;
+  }
+}
+
+/* Adding a media query for large viewports to change the font sizes, widths and margins */
+@media (min-width: 1201px) and (max-width: 1600px) {
+  #wrapper {
+    width: 60%;
+    height: auto;
+  }
+
+  .masthead a {
+    font-size: 1.9em;
+    border-radius: 0.5em;
+  }
+
+  .masthead h1 {
+    font-size: 3.5em;
+  }
+
+  .services{
+    height: auto;
+  }
+
+  .services h2 {
+    font-size: 3.1em;
+  }
+
+  .services p {
+    font-size: 1.1em;
+  }
+
+  .services li {
+    margin: 1em;
+  }
+
+  .services h3 {
+    font-size: 2.5em;
+  
+  }
+
+  nav a {
+    font-size: 1.5em;
+  }
+
+  nav img {
+    width: 14vw;
+    height: 8vw;
+  }
+}
